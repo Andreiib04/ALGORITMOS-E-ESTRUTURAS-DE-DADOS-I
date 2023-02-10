@@ -1,8 +1,0 @@
-Aluno: Andrei I Bueno
-Matriculoa: 20202924
-
-Faça um programa para cadastrar e calcular a média de alunos, o programa deve contar as opções de adicionar, remover, reprovados e pesquisar.
-
-- Foi implementado apenas a função de adicionar nomes, as demais funções não estão completas.
-- As demais funções foram criadas mas não foram implementadas.
-- O código copila e possibilita cadastrar até 50 nomes e notas.
