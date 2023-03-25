@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_NOME 50
+#define MAX_NOME 10
 
 typedef struct Pessoa
 {
