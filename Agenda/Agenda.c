@@ -11,14 +11,15 @@ typedef struct Pessoa
     char telefone[12]; // Adicionado espaço para o caractere nulo
 } Pessoa;
 
-int compararPessoas(const void *p1, const void *p2) {
-    const Pessoa *pessoa1 = (const Pessoa *) p1;
-    const Pessoa *pessoa2 = (const Pessoa *) p2;
+int compararPessoas(const void *p1, const void *p2)
+{
+    const Pessoa *pessoa1 = (const Pessoa *)p1;
+    const Pessoa *pessoa2 = (const Pessoa *)p2;
     return strcmp(pessoa1->nome, pessoa2->nome);
 }
 int main()
 {
-    
+
     Pessoa *agenda = NULL;
     int numPessoas = 0;
     while (1)
@@ -38,33 +39,34 @@ int main()
         switch (opcao)
         {
         case 1: // adicionar pessoa
-    numPessoas++;
+            numPessoas++;
 
-    Pessoa *novaPessoa = (Pessoa *)realloc(agenda, numPessoas * sizeof(Pessoa));
-    if (novaPessoa == NULL)
-    {
-        printf("Erro ao alocar memoria!\n");
-        return 1;
-    }
+            Pessoa *novaPessoa = (Pessoa *)realloc(agenda, numPessoas * sizeof(Pessoa));
+            if (novaPessoa == NULL)
+            {
+                printf("Erro ao alocar memoria!\n");
+                return 1;
+            }
 
-    agenda = novaPessoa;
+            agenda = novaPessoa;
 
-    Pessoa *pessoa = &agenda[numPessoas - 1];
+            Pessoa *pessoa = &agenda[numPessoas - 1];
 
-    printf("Nome: ");
-    scanf("%s", pessoa->nome);
+            printf("Nome: ");
+            scanf("%s", pessoa->nome);
 
-    printf("Idade: ");
-    scanf("%d", &pessoa->idade);
+            printf("Idade: ");
+            scanf("%d", &pessoa->idade);
 
-    printf("Telefone: ");
-    scanf("%s", pessoa->telefone);
+            printf("Telefone: ");
+            scanf("%s", pessoa->telefone);
 
-    // Adiciona a nova pessoa à heap e reordena
-    qsort(agenda, numPessoas, sizeof(Pessoa), compararPessoas);
+            // Adiciona a nova pessoa à heap e reordena
+            qsort(agenda, numPessoas, sizeof(Pessoa), compararPessoas);
 
-    printf("Pessoa adicionada com sucesso!\n");
-    break;
+            printf("Pessoa adicionada com sucesso!\n");
+            break;
+
         case 2: // remover pessoa
             if (numPessoas > 0)
             {
@@ -139,23 +141,24 @@ int main()
             }
             break;
 
-case 4: // listar pessoas
-    if (numPessoas > 0)
-    {
-        printf("Listando pessoas:\n");
-        for (int i = 0; i < numPessoas; i++)
-        {
-            printf("Nome: %s\n", agenda[i].nome);
-            printf("Idade: %d\n", agenda[i].idade);
-            printf("Telefone: %s\n", agenda[i].telefone);
-            printf("\n");
-        }
-    }
-    else
-    {
-        printf("Agenda vazia!\n");
-    }
-    break;
+        case 4: // listar pessoas
+            if (numPessoas > 0)
+            {
+                printf("Listando pessoas:\n");
+                for (int i = 0; i < numPessoas; i++)
+                {
+                    printf("Nome: %s\n", agenda[i].nome);
+                    printf("Idade: %d\n", agenda[i].idade);
+                    printf("Telefone: %s\n", agenda[i].telefone);
+                    printf("\n");
+                }
+            }
+            else
+            {
+                printf("Agenda vazia!\n");
+            }
+            break;
+
         case 5: // sair
             free(agenda);
             printf("Ate mais!\n");
