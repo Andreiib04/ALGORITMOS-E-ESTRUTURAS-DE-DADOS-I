@@ -1,0 +1,126 @@
+Dr. Memory version 2.5.0 build 0 built on Oct 18 2021 03:10:43
+Windows version: WinVer=105;Rel=2009;Build=22621;Edition=Enterprise
+Dr. Memory results for pid 9752: "AgendaD.exe"
+Application cmdline: "C:\Users\Andrei\Desktop\AgendaD.exe"
+Recorded 124 suppression(s) from default C:\Program Files (x86)\Dr. Memory\bin\suppress-default.txt
+
+Error #1: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW             +0x20e    (0x75b4e4ce <KERNELBASE.dll+0x11e4ce>)
+# 1 KERNELBASE.dll!FindNextFileA             +0x33     (0x75c37694 <KERNELBASE.dll+0x207694>)
+# 2 .text                                     [../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:184]
+# 3 __mingw_glob                              [../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:184]
+# 4 _setargv                                  [C:\Users\Andrei\Desktop\Andrei/AgendaD.c:168]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!RtlInitializeExceptionChain    +0x6a     (0x7706b74b <ntdll.dll+0x6b74b>)
+# 8 ntdll.dll!RtlClearBits                   +0xbe     (0x7706b6cf <ntdll.dll+0x6b6cf>)
+Note: @0:00:00.154 in thread 940
+Note: instruction: cmp    %eax $0x0000001a
+
+Error #2: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW             +0x23b    (0x75b4e4fb <KERNELBASE.dll+0x11e4fb>)
+# 1 KERNELBASE.dll!FindNextFileA             +0x33     (0x75c37694 <KERNELBASE.dll+0x207694>)
+# 2 .text                                     [../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:184]
+# 3 __mingw_glob                              [../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:184]
+# 4 _setargv                                  [C:\Users\Andrei\Desktop\Andrei/AgendaD.c:168]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!RtlInitializeExceptionChain    +0x6a     (0x7706b74b <ntdll.dll+0x6b74b>)
+# 8 ntdll.dll!RtlClearBits                   +0xbe     (0x7706b6cf <ntdll.dll+0x6b6cf>)
+Note: @0:00:00.156 in thread 940
+Note: instruction: data16 mov    %cx -> 0x00000234(%ebx,%eax,2)
+
+Error #3: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW             +0x167    (0x75b4e427 <KERNELBASE.dll+0x11e427>)
+# 1 KERNELBASE.dll!FindNextFileA             +0x33     (0x75c37694 <KERNELBASE.dll+0x207694>)
+# 2 .text                                     [../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:184]
+# 3 __mingw_glob                              [../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:184]
+# 4 _setargv                                  [C:\Users\Andrei\Desktop\Andrei/AgendaD.c:168]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!RtlInitializeExceptionChain    +0x6a     (0x7706b74b <ntdll.dll+0x6b74b>)
+# 8 ntdll.dll!RtlClearBits                   +0xbe     (0x7706b6cf <ntdll.dll+0x6b6cf>)
+Note: @0:00:00.161 in thread 940
+Note: instruction: test   %eax %eax
+
+Error #4: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW             +0x1ca    (0x75b4e48a <KERNELBASE.dll+0x11e48a>)
+# 1 KERNELBASE.dll!FindNextFileA             +0x33     (0x75c37694 <KERNELBASE.dll+0x207694>)
+# 2 .text                                     [../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:184]
+# 3 __mingw_glob                              [../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:184]
+# 4 _setargv                                  [C:\Users\Andrei\Desktop\Andrei/AgendaD.c:168]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!RtlInitializeExceptionChain    +0x6a     (0x7706b74b <ntdll.dll+0x6b74b>)
+# 8 ntdll.dll!RtlClearBits                   +0xbe     (0x7706b6cf <ntdll.dll+0x6b6cf>)
+Note: @0:00:00.163 in thread 940
+Note: instruction: cmp    %eax $0x00000206
+
+Error #5: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW             +0x1fd    (0x75b4e4bd <KERNELBASE.dll+0x11e4bd>)
+# 1 KERNELBASE.dll!FindNextFileA             +0x33     (0x75c37694 <KERNELBASE.dll+0x207694>)
+# 2 .text                                     [../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:184]
+# 3 __mingw_glob                              [../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:184]
+# 4 _setargv                                  [C:\Users\Andrei\Desktop\Andrei/AgendaD.c:168]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!RtlInitializeExceptionChain    +0x6a     (0x7706b74b <ntdll.dll+0x6b74b>)
+# 8 ntdll.dll!RtlClearBits                   +0xbe     (0x7706b6cf <ntdll.dll+0x6b6cf>)
+Note: @0:00:00.163 in thread 940
+Note: instruction: data16 mov    %cx -> 0x2c(%ebx,%eax,2)
+
+Error #6: UNINITIALIZED READ: reading 0x00fd1200-0x00fd1204 4 byte(s)
+# 0 KERNELBASE.dll!FindNextFileW             +0x24e    (0x75b4e50e <KERNELBASE.dll+0x11e50e>)
+# 1 KERNELBASE.dll!FindNextFileA             +0x33     (0x75c37694 <KERNELBASE.dll+0x207694>)
+# 2 .text                                     [../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:184]
+# 3 __mingw_glob                              [../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:184]
+# 4 _setargv                                  [C:\Users\Andrei\Desktop\Andrei/AgendaD.c:168]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!RtlInitializeExceptionChain    +0x6a     (0x7706b74b <ntdll.dll+0x6b74b>)
+# 8 ntdll.dll!RtlClearBits                   +0xbe     (0x7706b6cf <ntdll.dll+0x6b6cf>)
+Note: @0:00:00.163 in thread 940
+Note: instruction: test   0x38(%edi) $0x00000400
+
+Error #7: UNINITIALIZED READ: reading register eax
+# 0 .text                                     [../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:184]
+# 1 __mingw_readdir                           [../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:184]
+# 2 .text                                     [../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:184]
+# 3 __mingw_glob                              [../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:184]
+# 4 _setargv                                  [C:\Users\Andrei\Desktop\Andrei/AgendaD.c:168]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!RtlInitializeExceptionChain    +0x6a     (0x7706b74b <ntdll.dll+0x6b74b>)
+# 8 ntdll.dll!RtlClearBits                   +0xbe     (0x7706b6cf <ntdll.dll+0x6b6cf>)
+Note: @0:00:00.164 in thread 940
+Note: instruction: cmp    %eax $0x00000010
+
+===========================================================================
+FINAL SUMMARY:
+
+DUPLICATE ERROR COUNTS:
+	Error #   1:     31
+	Error #   2:     31
+	Error #   3:     10
+	Error #   4:     10
+	Error #   5:     10
+	Error #   6:     10
+	Error #   7:     10
+
+SUPPRESSIONS USED:
+
+ERRORS FOUND:
+      0 unique,     0 total unaddressable access(es)
+      7 unique,   112 total uninitialized access(es)
+      0 unique,     0 total invalid heap argument(s)
+      0 unique,     0 total GDI usage error(s)
+      0 unique,     0 total handle leak(s)
+      0 unique,     0 total warning(s)
+      0 unique,     0 total,      0 byte(s) of leak(s)
+      0 unique,     0 total,      0 byte(s) of possible leak(s)
+ERRORS IGNORED:
+      1 potential error(s) (suspected false positives)
+         (details: C:\Users\Andrei\AppData\Roaming\Dr. Memory\DrMemory-AgendaD.exe.9752.000\potential_errors.txt)
+      6 unique,     6 total,   4426 byte(s) of still-reachable allocation(s)
+         (re-run with "-show_reachable" for details)
+Details: C:\Users\Andrei\AppData\Roaming\Dr. Memory\DrMemory-AgendaD.exe.9752.000\results.txt
