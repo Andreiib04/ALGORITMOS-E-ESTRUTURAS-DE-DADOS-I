@@ -8,3 +8,5 @@ Turma: M2
 forem semelhantes à folha.
 
 Consegui fazer o exercicio completo!
+
+Link do vídeo: https://drive.google.com/file/d/1TzxIxgXhkcEDkNVz4oWD8jbUrcUUk4LH/view?usp=sharing
